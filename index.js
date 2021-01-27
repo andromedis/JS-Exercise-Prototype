@@ -59,7 +59,7 @@ function Airplane(name) {
     return `${this.name}, ${this.age}`;
   }
 
-  // Test: Person constructor and functions
+  // Test output: Person constructor and functions
   const mary = new Person("Mary", 50);
   console.log(mary);
   mary.eat("oatmeal");
@@ -102,7 +102,8 @@ function Airplane(name) {
     this.tank -= (1 / this.milesPerGallon * distance) < this.tank ? (1 / this.milesPerGallon * distance) : this.tank;
     return this.tank !== 0 ? `Odometer: ${this.odometer} mi Tank: ${this.tank} gal` : `I ran out of fuel at ${this.odometer} miles!`;
   }
-  // Test: Car constructor and functions
+
+  // Test output: Car constructor and functions
   const hondaCRV = new Car("CR-V", 40);
   console.log(hondaCRV);
   hondaCRV.fill(1);
@@ -110,6 +111,8 @@ function Airplane(name) {
   console.log(hondaCRV.drive(5));
   console.log(hondaCRV.drive(40));
   
+
+
   /*
     TASK 3
       - Write a Baby constructor subclassing Person.
@@ -128,7 +131,7 @@ function Airplane(name) {
     return `Playing with ${this.favoriteToy}`;
   }
 
-  // Test: Baby constructor and functions, inherited Person attributes and functions
+  // Test output: Baby constructor and functions, inherited Person attributes and functions
   const josh = new Baby("Josh", 1, "rattle");
   console.log(josh);
   josh.eat("milk");
@@ -140,6 +143,8 @@ function Airplane(name) {
   console.log(josh.toString());
   console.log(josh.play());
   
+
+
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
