@@ -143,10 +143,17 @@ function Airplane(name) {
   /* 
     TASK 4
     In your own words explain the four principles for the "this" keyword below:
-    1. 
-    2. 
-    3. 
-    4. 
+    1. When "this" is used within the global scope, it will bind to and represent
+        either the console object (if used in a code editor), or the window object 
+        (if used in the browser window).
+    2. When "this" is used in a function, it will bind to and represent the object 
+        that the function is called on (the object to the left of the dot operator).
+    3. When "this" is used in a constructor, it will bind to and represent the object
+        that the constructor is creating each time the constructor is called after
+        the "new" keyword.
+    4. When the .call or .apply functions are used, the functions they are called on
+        which use the "this" keyword will bind it to the first object passed inside 
+        the parentheses to the .call() or .apply() function call.
   */
   
   
